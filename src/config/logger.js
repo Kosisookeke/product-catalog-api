@@ -8,15 +8,12 @@ const logFormat = printf(({ level, message, timestamp }) => {
 
 const logger = winston.createLogger({
   level: 'debug',
-  format: combine(
-    timestamp(),
-    logFormat
-  ),
+  format: combine(timestamp(), logFormat),
   transports: [
     new winston.transports.Console(),
     new winston.transports.File({ filename: 'logs/error.log', level: 'error' }),
-    new winston.transports.File({ filename: 'logs/combined.log' })
-  ]
+    new winston.transports.File({ filename: 'logs/combined.log' }),
+  ],
 });
 
 module.exports = logger;
