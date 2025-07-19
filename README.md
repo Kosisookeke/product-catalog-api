@@ -1,4 +1,4 @@
-### ✅ Here's a **Professional README.md** for Your Product Catalog API
+### ✅ Product Catalog API
 
 This README includes:
 
@@ -200,31 +200,6 @@ All endpoints are under the base path:
 ### 🟢 Create a Product
 
 **POST** `http://localhost:3000/api/products`
-
-```json
-{
-  "name": "iPhone 15",
-  "description": "Apple iPhone 15 Pro",
-  "price": 999,
-  "stock": 50,
-  "category": "64a1b2c3d4e5f6a7b8c9d0e1", // Use category ID from above
-  "variants": [
-    {
-      "color": "Silver",
-      "size": "6.1 inches",
-      "price": 999,
-      "stock": 20
-    },
-    {
-      "color": "Space Gray",
-      "size": "6.1 inches",
-      "price": 1099,
-      "stock": 30
-    }
-  ],
-  "discount": 5
-}
-```
 
 ### 🔍 Search Products
 
