@@ -1,17 +1,13 @@
-// src/controllers/category.controller.js
-
 const Category = require('../models/category.model');
 const logger = require('../config/logger');
 const Joi = require('joi');
 const { sendSuccess, sendError } = require('../utils/response.util');
 
-// Joi schema for category validation
 const categorySchema = Joi.object({
   name: Joi.string().required().trim(),
   description: Joi.string().trim().optional()
 });
 
-// Create a new category
 exports.createCategory = async (req, res) => {
   try {
     const { error, value } = categorySchema.validate(req.body);
@@ -29,7 +25,6 @@ exports.createCategory = async (req, res) => {
   }
 };
 
-// Get all categories
 exports.getCategories = async (req, res) => {
   try {
     const categories = await Category.find();
@@ -40,7 +35,6 @@ exports.getCategories = async (req, res) => {
   }
 };
 
-// Get a single category by ID
 exports.getCategoryById = async (req, res) => {
   try {
     const { id } = req.params;
@@ -53,7 +47,6 @@ exports.getCategoryById = async (req, res) => {
   }
 };
 
-// Update a category
 exports.updateCategory = async (req, res) => {
   try {
     const { id } = req.params;
@@ -74,7 +67,6 @@ exports.updateCategory = async (req, res) => {
   }
 };
 
-// Delete a category
 exports.deleteCategory = async (req, res) => {
   try {
     const { id } = req.params;
