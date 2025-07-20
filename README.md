@@ -216,7 +216,7 @@ All endpoints are under the base path:
 You can view and test all endpoints interactively:
 
 ```
-http://localhost:3000/api-docs
+http://localhost:3000/api-docs/#/
 ```
 
 ---
