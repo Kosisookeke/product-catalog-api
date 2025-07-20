@@ -86,7 +86,9 @@ npm install
 
 ---
 
-## ⚙️ Setup Instructions
+## ⚙️ Setup Instructions and video presentation testing API endpoint
+
+https://www.loom.com/share/1fbfa870c6544fb3b6b1aada7dea72eb?sid=885ef19a-88ff-494c-9da4-e6087667f0c0
 
 ### 1. Clone the repository
 
