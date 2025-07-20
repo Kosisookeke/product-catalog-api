@@ -93,7 +93,7 @@ https://www.loom.com/share/1fbfa870c6544fb3b6b1aada7dea72eb?sid=885ef19a-88ff-49
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/product-catalog-api.git
+git clone https://github.com/Kosisookeke/product-catalog-api.git
 cd product-catalog-api
 ```
 
