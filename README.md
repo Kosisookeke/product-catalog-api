@@ -255,8 +255,6 @@ I Used **Postman**, to test the API.
 ## ⚠️ Limitations
 
 - No authentication or authorization
-- No JWT or session-based login
+- Session-based login would be a limitation
 - Basic filtering (can be expanded with more query params)
 - No advanced search (e.g., fuzzy search, full-text search)
-
----
